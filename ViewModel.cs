@@ -1,14 +1,3 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.ComponentModel;
-using System.Runtime.CompilerServices;
-using System.Text.RegularExpressions;
-
-namespace TISBIApp.ViewModelsFile.BaseClasses
-{
     internal abstract class ViewModel : INotifyPropertyChanged
     {
         public event PropertyChangedEventHandler? PropertyChanged;
@@ -29,4 +18,4 @@ namespace TISBIApp.ViewModelsFile.BaseClasses
   
 
     
-}
+
