@@ -3,8 +3,7 @@
         public event PropertyChangedEventHandler? PropertyChanged;
 
         protected virtual void OnPropertyChanged([CallerMemberName] string PropertyName = "")
-        { 
-           
+        {         
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(PropertyName)); 
         }
         protected bool SetField<T>(ref T field, T value, [CallerMemberName] string propertyName = "")
